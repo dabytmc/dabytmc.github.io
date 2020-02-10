@@ -1,0 +1,23 @@
+body {
+    --color-main: rgb(230, 31, 31);
+    --color-dark: rgb(167, 0, 0);
+    --color-darkest: black;
+    height: 100vh;
+    background-color: var(--color-darkest);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-main);
+}
+
+#heart-icon {
+    font-size: xx-large;
+    margin-inline-end: 0.5em;
+    text-shadow: 4px 2.5px var(--color-dark);
+}
+
+#timer {
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0.8px 0.8px var(--color-dark);
+}
