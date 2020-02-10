@@ -24,6 +24,7 @@ function printResult() {
 
 var distance = getDistance();
 if (distance > 0) {
+    updateTimer();
     var updater = setInterval(updateTimer, 1000);
 
     setTimeout(function() {
