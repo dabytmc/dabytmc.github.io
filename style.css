@@ -8,12 +8,29 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-main);
+    margin: 0;
 }
 
-#heart-icon {
-    font-size: xx-large;
+#icon, #timer {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+    #icon, #timer {
+        font-size: calc(20px + (48 - 25) * ((100vw - 320px) / (1000 - 320)));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #icon, #timer {
+        font-size: 48px;
+    }
+}
+
+#icon {
+    height: 1em;
+    width: 1em;
     margin-inline-end: 0.5em;
-    text-shadow: 4px 2.5px var(--color-dark);
 }
 
 #timer {
